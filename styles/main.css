@@ -1,0 +1,38 @@
+body {
+    margin-top: 3em;
+    margin-left: 0;
+}
+header {
+    position: fixed;
+    background-color:white;
+    top: 0;
+    width: 100%;
+    margin-top: 0;
+}
+nav {
+    display: flex;
+}
+.logo {
+    height: 3em;
+}
+#message {
+    flex-grow: 3;
+    height: auto;
+    margin: auto 2em;
+}
+button {
+    height: auto;
+    margin: auto;
+    margin-right: 1em;
+}
+.boxes {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5em;
+}
+#themeEnd {
+    margin-right: 1em;
+}
+section {
+    margin-left: 2em;
+}
