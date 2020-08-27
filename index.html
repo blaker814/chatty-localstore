@@ -4,8 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatty Local Storage</title>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <img src="images/logo.png" alt="Chatty Pages logo" class="logo">
+            <input type="text" id="message" name="message" placeholder="Enter message...">
+            <button type="button" id="clearAll">Clear message board</button>
+        </nav>
+        <div class="boxes">
+            <input type="checkbox" name="theme" value="darkTheme">
+            <label for="theme" id="themeEnd">Dark theme</label>
+            <input type="checkbox" name="textSize" value="largeText">
+            <label for="theme">Large text</label>
+        </div>
+    </header>    
+    <section id="message-area">
+
+    </section>
     <script src="./scripts/main.js" type="module"></script>
 </body>
 </html>
