@@ -13,6 +13,7 @@ document
             localStorage.setItem('message', event.target.value)
             HTMLsite.innerHTML += newMessage
             document.querySelector("#message").value = ""
+            document.querySelector("#clearAll").disabled = false;
         }
 })
 
@@ -21,4 +22,17 @@ document
     .addEventListener("click", () => {
         const space = document.querySelector("#message-area")
         space.innerHTML = "";
+        document.querySelector("#clearAll").disabled = true;
     })
+
+console.log(localStorage)
+
+document.getElementById("darkTheme").addEventListener("change", event => {
+    if (event.target.checked === true) {
+      document.getElementsByTagName("body")[0].setAttribute("class", "checked");
+      document.getElementsByTagName("header")[0].setAttribute("class", "checked");
+    } else {
+      document.getElementsByTagName("body")[0].setAttribute("class", "unchecked");
+      document.getElementsByTagName("header")[0].setAttribute("class", "unchecked");
+    }
+  });

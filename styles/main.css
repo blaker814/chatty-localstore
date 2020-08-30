@@ -1,10 +1,17 @@
 body {
-    margin-top: 3em;
+    margin-top: 5em;
     margin-left: 0;
+}
+.unchecked {
+    background-color: white;
+    color: black;
+}
+.checked {
+    background-color: darkslategray;
+    color: snow;
 }
 header {
     position: fixed;
-    background-color:white;
     top: 0;
     width: 100%;
     margin-top: 0;
