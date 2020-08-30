@@ -6,15 +6,15 @@
     <title>Chatty Local Storage</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
-<body>
-    <header>
+<body class="unchecked">
+    <header class="unchecked">
         <nav>
             <img src="images/logo.png" alt="Chatty Pages logo" class="logo">
             <input type="text" id="message" name="message" placeholder="Enter message...">
-            <button type="button" id="clearAll">Clear message board</button>
+            <button type="button" id="clearAll" disabled>Clear message board</button>
         </nav>
         <div class="boxes">
-            <input type="checkbox" name="theme" value="darkTheme">
+            <input type="checkbox" name="darkTheme" value="darkTheme" id="darkTheme">
             <label for="theme" id="themeEnd">Dark theme</label>
             <input type="checkbox" name="textSize" value="largeText">
             <label for="theme">Large text</label>
